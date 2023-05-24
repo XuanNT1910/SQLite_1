@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SQLite_1</string>
+    <string-array name="category">
+        <item>Mua sắm</item>
+        <item>Tiền ăn</item>
+        <item>Tiền điện</item>
+        <item>Tiền nước</item>
+        <item>Tiền nhà</item>
+        <item>Đi lại</item>
+    </string-array>
+</resources>

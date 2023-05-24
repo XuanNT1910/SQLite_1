@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mHome"
+        android:title="Hôm nay"
+        android:icon="@drawable/hom_nay_foreground"/>
+    <item
+        android:id="@+id/mHistory"
+        android:title="Lich sử"
+        android:icon="@drawable/lich_su"/>
+    <item
+        android:id="@+id/mSearch"
+        android:title="Tìm kiếm"
+        android:icon="@drawable/tim_kiem"/>
+</menu>
