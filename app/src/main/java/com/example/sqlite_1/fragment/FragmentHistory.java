@@ -36,8 +36,8 @@ public class FragmentHistory extends Fragment implements RecycleViewAdapter.Item
         recyclerView=view.findViewById(R.id.recycleView);
         adapter = new RecycleViewAdapter();
         db = new SQLiteHelper(getContext());
-//        Item i = new Item(1,"Mua quan bo","Mua sam","500","19/05/2023");
-//        db.addItem(i);
+        Item i = new Item(1,"Mua quan bo","Mua sam","500","19/05/2023");
+        db.addItem(i);
         List<Item>list = db.getAll();
         adapter.setList(list);
         LinearLayoutManager manager = new LinearLayoutManager(getContext(),RecyclerView.VERTICAL,false);

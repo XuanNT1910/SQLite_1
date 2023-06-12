@@ -43,7 +43,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         List<Item> list = new ArrayList<>();
         SQLiteDatabase st = getReadableDatabase();
         String order ="date DESC";
-        Cursor rs = st.query("item",null,null,null,null,null,order);
+        Cursor rs = st.query("items",null,null,null,null,null,order);
         while(rs!=null && rs.moveToNext()){
             int id = rs.getInt(0);
             String title= rs.getString(1);
@@ -62,7 +62,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         values.put("price",i.getPrice());
         values.put("date",i.getDate());
         SQLiteDatabase sqLiteDatabase = getWritableDatabase();
-        return sqLiteDatabase.insert("item",null,values);
+        return sqLiteDatabase.insert("items",null,values);
     }
     public List<Item>getByDate(String date){
         List<Item> list = new ArrayList<>();
